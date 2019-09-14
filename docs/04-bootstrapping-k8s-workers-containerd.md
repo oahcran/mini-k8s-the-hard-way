@@ -1,6 +1,6 @@
 # Bootstrapping the Kubernetes Worker Node with `containerd`
 
-References:
+**References:**
 
 * [Install Containerd with Release Tarball](https://github.com/containerd/cri/blob/master/docs/installation.md)
 * [container runtimes - containerd](https://kubernetes.io/docs/setup/production-environment/container-runtimes/#containerd)

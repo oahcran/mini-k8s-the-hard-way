@@ -8,14 +8,16 @@ An experimental mini Kubernetes cluster:
     * internal endpoint communication with worker nodes `kubelet`
     * external endpoint by `kubectl`
 * `containerd` runtime
+* explore CNI plugins with [_Network Policy_](https://kubernetes.io/docs/concepts/services-networking/network-policies/) support
 
 ## details
 
 * Kubernetes `v1.15.3`
 * etcd `v3.3.15`
 * containerd `1.2.8`
-* CNI `v0.7.5`
-* Flannel `v0.11.0`
+* CNI `v0.7.6`
+    * Flannel `0.11.0`
+    * Weave Net `2.5.2`
 * CoreDNS `v1.5.0`
 * Ubuntu `16.04.6 LTS`
 
@@ -27,7 +29,8 @@ An experimental mini Kubernetes cluster:
 * Bootstrapping the Worker Nodes
     * [runtime `containerd`](docs/04-bootstrapping-k8s-workers-containerd.md)
 * Deploying CNI Networking Plugin
-    * [CNI `flannel`](docs/05-deploying-cni-network-plugin-flannel.md)
+    * [`flannel`](docs/05-deploying-cni-network-plugin-flannel.md)
+    * [`weave net`](docs/05-deploying-cni-network-plugin-weave.md)
 * [Deploying the DNS Cluster Add-on](docs/06-dns-addon.md)
 
 ## output
